@@ -1,20 +1,2 @@
-https://openalex.org/W2112181056
-https://openalex.org/W2162651880
-https://openalex.org/W2016922062
-https://openalex.org/W1542981317
-https://openalex.org/W2526646482
-https://openalex.org/W3003821665
-https://openalex.org/W2030834420
-https://openalex.org/W4247151931
-https://openalex.org/W2018258488
-https://openalex.org/W2603064927
-https://openalex.org/W2008901850
-https://openalex.org/W2153690880
-https://openalex.org/W2141071915
-https://openalex.org/W2015088745
-https://openalex.org/W2013055927
-https://openalex.org/W2778935320
-https://openalex.org/W2025674646
-https://openalex.org/W2007898123
-https://openalex.org/W2045009304
-https://openalex.org/W2036899386
+https://openalex.org/W2112181056,https://openalex.org/W2162651880,https://openalex.org/W2016922062,https://openalex.org/W1542981317,https://openalex.org/W2526646482,https://openalex.org/W3003821665,https://openalex.org/W2030834420,https://openalex.org/W4247151931,https://openalex.org/W2018258488,https://openalex.org/W2603064927,https://openalex.org/W2008901850,https://openalex.org/W2153690880,https://openalex.org/W2141071915,https://openalex.org/W2015088745,https://openalex.org/W2013055927,https://openalex.org/W2778935320,https://openalex.org/W2025674646,https://openalex.org/W2007898123,https://openalex.org/W2045009304,https://openalex.org/W2036899386
+The missing memristor found,Memristor-The missing circuit element,Nanoscale Memristor Device as Synapse in Neuromorphic Systems,Training and operation of an integrated neuromorphic network based on metal-oxide memristors,Memristors with diffusive dynamics as synaptic emulators for neuromorphic computing,Fully hardware-implemented memristor convolutional neural network,Resistance switching memories are memristors,MEMRISTOR OSCILLATORS,Circuit Elements With Memory: Memristors, Memcapacitors, and Meminductors,SPICE Model of Memristor with Nonlinear Dopant Drift,TEAM: ThrEshold Adaptive Memristor Model,The elusive memristor: properties of basic electrical circuits,Practical Approach to Programmable Analog Circuits With Memristors,Experimental demonstration of associative memory with memristive neural networks,Memristive switching mechanism for metal/oxide/metal nanodevices,The future of electronics based on memristive systems,‘Memristive’ switches enable ‘stateful’ logic operations via material implication,Switching dynamics in titanium dioxide memristive devices,Memristive devices and systems,A fast, high-endurance and scalable non-volatile memory device made from asymmetric Ta2O5−x/TaO2−x bilayer structures

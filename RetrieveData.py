@@ -1,5 +1,5 @@
 import pickle
-from pyalex import Works, Authors, Sources, Institutions, Topics, Publishers, Funders
+from pyalex import Works
 import pyalex as alex
 
 email = "example@gmail.com" # remove before publishing

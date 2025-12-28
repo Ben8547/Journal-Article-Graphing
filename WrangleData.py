@@ -1,6 +1,7 @@
 from RetrieveData import file_path
 import pickle
-from numpy import zeros, save
+from numpy import ones
+from scipy.sparse import csr_matrix, save_npz
 
 '''
 General Idea:
@@ -27,17 +28,28 @@ n = len(simplifiedData) # number of papers
 
 if __name__ == "__main__":
 
-    Adjacency = zeros((n,n)) # make an n by n matrix to store adjacency matrix
-
     # each row and column of the matrix represents a paper.
     # If entry (i,j) has a 0 that mean that paper i does not reference paper j
     # If entry (i,j) has a 1 then i does reference j
 
-    for i in range(n): # there is probably a quicker way to do this though I am not sure what it would be
-        for j in range(n):
-            if papers[j] in simplifiedData[papers[i]]:
-                Adjacency[i,j] = 1
+    rows = []
+    cols = []
 
-    save("Adjacency.npy",Adjacency) # save the matrix to a binary file
+    paper_index = {paper: i for i, paper in enumerate(papers)}
+
+    for i, paper in enumerate(papers):
+        for cited in simplifiedData[paper]:
+            if cited in paper_index:
+                rows.append(i)
+                cols.append(paper_index[cited])
+
+    data = ones(len(rows), dtype=bool)
+
+    Adjacency = csr_matrix(
+        (data, (rows, cols)), shape=(n, n)
+    ) # make an n by n matrix to store adjacency matrix; bool decreases each entry from 8 bits to 1. The matrix is sparse so by using a scipy sparse matrix we can decrease the size as well.
+    # storing as a boolean sparse matix decreased the size about 3000 fold (~700 MB -> 248 KB )
+
+    save_npz("Adjacency.npz",Adjacency) # save the matrix to a binary file
 
     print("File Saved")
